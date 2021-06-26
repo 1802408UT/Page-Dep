@@ -8,6 +8,13 @@ import { BodyComponent } from './component/body/body.component';
 import { AboutComponent } from './component/body/about/about.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ProductsListComponent } from './component/products-list/products-list.component';
+import { ServicesComponent } from './component/services/services.component';
+import { ClientesComponent } from './component/clientes/clientes.component';
+import { TeamComponent } from './component/team/team.component';
+import { CarruselMarcasComponent } from './component/carrusel-marcas/carrusel-marcas.component';
+
+import { SwiperModule } from 'swiper/angular';
+import { ProductsDetailsComponent } from './component/products-details/products-details.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +23,18 @@ import { ProductsListComponent } from './component/products-list/products-list.c
     BodyComponent,
     AboutComponent,
     FooterComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    ServicesComponent,
+    ClientesComponent,
+    TeamComponent,
+    CarruselMarcasComponent,
+    ProductsDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

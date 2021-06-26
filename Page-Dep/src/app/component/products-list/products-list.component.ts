@@ -10,6 +10,4 @@ export class ProductsListComponent {
 
   products = products;
 
-  
-
 }

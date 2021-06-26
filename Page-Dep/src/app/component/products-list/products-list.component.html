@@ -1,18 +1,39 @@
-<h2>Products</h2>
+<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+    <div *ngFor="let product of products">
 
-<div *ngFor="let product of products">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+                <img src="{{product.Image}}" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                    <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+                </div>
+                <div class="portfolio-info">
+                    <div class="example">
+                        <p>{{product.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <h3>
-        <a [title]="product.name + ' details'">
+    </div>
+    <!--
+    <h2>Products</h2>
+
+    <div *ngFor="let product of products">
+
+        <h3>
+            <a [title]="product.name + ' details'">
       {{ product.name }}
     </a>
-    </h3>
+        </h3>
 
-    <p *ngIf="product.description">
-        Description: {{ product.description }}
-    </p>
-    <p *ngIf="product.price">
-        Price: {{product.price}}
+        <p *ngIf="product.description">
+            Description: {{ product.description }}
+        </p>
+        <p *ngIf="product.price">
+            Price: {{product.price}}
 
-        <img src="{{product.Image}}">
+            <img src="{{product.Image}}">
+    </div>
 </div>
+-->
