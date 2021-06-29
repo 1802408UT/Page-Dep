@@ -1,11 +1,14 @@
-<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-    <div *ngFor="let product of products">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+<section id="portfolio" class="portfolio">
+    <div class="section-title" data-aos="fade-up">
+        <h2>Productos</h2>
+        <p>Revisa nuestros hermosos productos</p>
+    </div>
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" *ngFor="let product of products; index as productId">
             <div class="portfolio-wrap">
                 <img src="{{product.Image}}" class="img-fluid" alt="">
                 <div class="portfolio-links">
-                    <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+                    <a [title]="product.name + ' Detalles'" [routerLink]="['/products',productId]"><i class="icofont-link"></i></a>
                 </div>
                 <div class="portfolio-info">
                     <div class="example">
@@ -14,9 +17,10 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <!--
+</section>
+
+<!--
     <h2>Products</h2>
 
     <div *ngFor="let product of products">

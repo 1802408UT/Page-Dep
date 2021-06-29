@@ -15,6 +15,10 @@ import { CarruselMarcasComponent } from './component/carrusel-marcas/carrusel-ma
 
 import { SwiperModule } from 'swiper/angular';
 import { ProductsDetailsComponent } from './component/products-details/products-details.component';
+import { InicioComponent } from './component/inicio/inicio.component';
+import { ContactoComponent } from './component/contacto/contacto.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ import { ProductsDetailsComponent } from './component/products-details/products-
     ClientesComponent,
     TeamComponent,
     CarruselMarcasComponent,
-    ProductsDetailsComponent
+    ProductsDetailsComponent,
+    InicioComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

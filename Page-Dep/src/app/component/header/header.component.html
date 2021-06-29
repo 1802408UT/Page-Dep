@@ -2,18 +2,18 @@
     <div class="container-fluid d-flex">
 
         <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.html"><span>Tecno - Next</span></a></h1>
+            <h1 class="text-light"><a><span>Tecno - Next</span></a></h1>
 
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="#">Acerca de Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Equipo</a></li>
+                <li class="active"><a routerLink="/inicio" routerLinkActive="active">Inicio</a></li>
+                <li><a routerLink="/about">Acerca de Nosotros</a></li>
+                <li><a routerLink="/servicios">Servicios</a></li>
+                <li><a routerLink="/products-list">Productos</a></li>
+                <li><a routerLink="/team">Equipo</a></li>
                 <!--<li class="drop-down"><a href="">Drop Down</a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
@@ -32,12 +32,15 @@
                     </ul>
                 </li>
             -->
-                <li><a href="#">Contáctanos</a></li>
+                <li><a routerLink="/contacto">Contáctanos</a></li>
 
-                <li class="get-started"><a href="#" target="_blank">Inicia Sesión</a></li>
+
+
+                <li class="get-started"><a routerLink="/login">Inicia Sesión</a></li>
             </ul>
         </nav>
         <!-- .nav-menu -->
 
     </div>
+
 </header>
