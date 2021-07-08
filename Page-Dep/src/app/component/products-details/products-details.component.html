@@ -1,1 +1,19 @@
-<p>products-details works!</p>
+<section id="products" class="products">
+    <div class="section-title" data-aos="fade-up">
+        <h2>Productos</h2>
+        <p>Revisa nuestros hermosos productos</p>
+
+        <div class="w3-container">
+            <h2>Detalles del Producto</h2>
+
+            <div *ngIf="product">
+                <h3>{{ product.name }}</h3>
+                <h4>{{ product.price }}</h4>
+                <p>{{ product.description }}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

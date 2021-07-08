@@ -1,16 +1,16 @@
-<section id="portfolio" class="portfolio">
+<section id="products" class="products">
     <div class="section-title" data-aos="fade-up">
         <h2>Productos</h2>
         <p>Revisa nuestros hermosos productos</p>
     </div>
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" *ngFor="let product of products; index as productId">
-            <div class="portfolio-wrap">
+    <div class="row products-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 products-item filter-web" *ngFor="let product of products; index as productId">
+            <div class="products-wrap">
                 <img src="{{product.Image}}" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                    <a [title]="product.name + ' Detalles'" [routerLink]="['/products',productId]"><i class="icofont-link"></i></a>
+                <div class="products-links">
+                    <a [title]="product.name + ' Detalles'" [routerLink]="['/products', productId]"><i class="icofont-link"></i></a>
                 </div>
-                <div class="portfolio-info">
+                <div class="products-info">
                     <div class="example">
                         <p>{{product.name}}</p>
                     </div>

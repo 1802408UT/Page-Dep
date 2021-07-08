@@ -661,21 +661,21 @@ section {
 
 
 /*--------------------------------------------------------------
-# Portfolio
+# Products
 --------------------------------------------------------------*/
 
-.portfolio .portfolio-item {
+.products .products-item {
     margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.products #products-flters {
     padding: 0;
     margin: 0 0 35px 0;
     list-style: none;
     text-align: center;
 }
 
-.portfolio #portfolio-flters li {
+.products #products-flters li {
     cursor: pointer;
     margin: 0 15px 15px 0;
     display: inline-block;
@@ -688,16 +688,16 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.products #products-flters li:hover,
+.products #products-flters li.filter-active {
     color: #eb5d1e;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.products #products-flters li:last-child {
     margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.products .products-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
@@ -705,7 +705,7 @@ section {
     z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
+.products .products-wrap::before {
     content: "";
     background: rgba(122, 105, 96, 0.6);
     position: absolute;
@@ -717,13 +717,13 @@ section {
     z-index: 2;
 }
 
-.portfolio .portfolio-wrap img {
+.products .products-wrap img {
     transition: 0.3s;
     position: relative;
     z-index: 1;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.products .products-wrap .products-links {
     opacity: 0;
     left: 0;
     right: 0;
@@ -734,7 +734,7 @@ section {
     transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.products .products-wrap .products-links a {
     color: #eb5d1e;
     margin: 0 4px;
     font-size: 25px;
@@ -750,16 +750,16 @@ section {
     transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a i {
+.products .products-wrap .products-links a i {
     line-height: 1;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.products .products-wrap .products-links a:hover {
     background: #eb5d1e;
     color: #fff;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.products .products-wrap .products-info {
     opacity: 0;
     position: absolute;
     bottom: -20px;
@@ -770,69 +770,69 @@ section {
     transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.products .products-wrap .products-info h4 {
     font-size: 20px;
     color: #fff;
     font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.products .products-wrap .products-info p {
     color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;
 }
 
 @media screen and (min-width: 600px) {
-    .portfolio .portfolio-wrap .portfolio-info p {
+    .products .products-wrap .products-info p {
         font-size: 25px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .portfolio .portfolio-wrap .portfolio-info p {
+    .products .products-wrap .products-info p {
         font-size: 30px;
     }
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.products .products-wrap:hover::before {
     left: 0;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.products .products-wrap:hover .products-links {
     opacity: 1;
     top: calc(50% - 16px);
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.products .products-wrap:hover .products-info {
     opacity: 1;
     bottom: 0;
 }
 
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Products Details
 --------------------------------------------------------------*/
 
-.portfolio-details {
+.products-details {
     padding-top: 30px;
 }
 
-.portfolio-details .portfolio-details-container {
+.products-details .products-details-container {
     position: relative;
 }
 
-.portfolio-details .portfolio-details-carousel {
+.products-details .products-details-carousel {
     position: relative;
     z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav,
-.portfolio-details .portfolio-details-carousel .owl-dots {
+.products-details .products-details-carousel .owl-nav,
+.products-details .products-details-carousel .owl-dots {
     margin-top: 5px;
     text-align: left;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot {
+.products-details .products-details-carousel .owl-dot {
     display: inline-block;
     margin: 0 10px 0 0;
     width: 12px;
@@ -841,11 +841,11 @@ section {
     background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.products-details .products-details-carousel .owl-dot.active {
     background-color: #eb5d1e !important;
 }
 
-.portfolio-details .portfolio-info {
+.products-details .products-info {
     padding: 30px;
     position: absolute;
     right: 0;
@@ -855,7 +855,7 @@ section {
     z-index: 2;
 }
 
-.portfolio-details .portfolio-info h3 {
+.products-details .products-info h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -863,36 +863,36 @@ section {
     border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.products-details .products-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.products-details .products-info ul li+li {
     margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.products-details .products-description {
     padding-top: 50px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.products-details .products-description h2 {
     width: 50%;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.products-details .products-description p {
     padding: 0 0 0 0;
 }
 
 @media (max-width: 768px) {
-    .portfolio-details .portfolio-description h2 {
+    .products-details .products-description h2 {
         width: 100%;
     }
-    .portfolio-details .portfolio-info {
+    .products-details .products-info {
         position: static;
         margin-top: 30px;
     }
