@@ -1,19 +1,42 @@
 <section id="products" class="products">
     <div class="section-title" data-aos="fade-up">
-        <h2>Productos</h2>
-        <p>Revisa nuestros hermosos productos</p>
-
+        <h2 class="w3-text-black w3-padding">Detalles del Producto {{product.name}}</h2>
         <div class="w3-container">
-            <h2>Detalles del Producto</h2>
-
             <div *ngIf="product">
-                <h3>{{ product.name }}</h3>
-                <h4>{{ product.price }}</h4>
-                <p>{{ product.description }}</p>
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 w3-centered">
+                            <div class="container">
+                                <h1>{{product.name}} <br> </h1>
+                            </div>
+                            <div class="container w3-padding">
+                                <a>{{product.description}}</a>
+                            </div>
+                            <a class="w3-btn btn-color1 w3-padding"><!--</a>(click)="addToCart(product)"-->Comprar</a>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                            <img src="{{product.Image}}" class="img-fluid animated" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="w3-row-padding w3-container">
+                    <div class="w3-col">
+                        <h1>{{product.name}}</h1>
+                    </div>
+                    <div class="w3-col">
+                        <div class="products-wrap">
+                            <img src="{{product.Image}}" class="img-fluid w3-image imagess">
+                            <div class="products-info">
+                                <div class="w3-center">
+                                    <p>{{product.name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
             </div>
-
         </div>
-
     </div>
 </section>

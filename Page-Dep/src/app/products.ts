@@ -6,7 +6,7 @@ export const products = [
       Image: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/mg/gm/1p/images/product-images/img_large/00750622733527l.jpg'
     },
     {
-      name: 'Phone Mini',
+      name: 'Phone Mini 12',
       price: 699,
       description: 'A great phone with one of the best cameras, Red',
       Image: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/mg/gm/1p/images/product-images/img_large/00750622733528l.jpg'
@@ -18,7 +18,7 @@ export const products = [
       Image: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/mg/gm/1p/images/product-images/img_large/00085369850037l.jpg'
     },
     {
-      name: 'Phone XL',
+      name: 'Phone XXL',
       price: 799,
       description: 'A large phone with one of the best screens',
       Image: 'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/mg/gm/1p/images/product-images/img_large/00750622733527l.jpg'
