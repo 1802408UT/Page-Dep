@@ -1,15 +1,13 @@
 <section id="products" class="products">
     <div class="section-title" data-aos="fade-up">
-        <h2 class="w3-text-black w3-padding">Detalles del Producto {{product.name}}</h2>
+        <h2 class="w3-text-black w3-padding">Detalles del Producto</h2>
         <div class="w3-container">
             <div *ngIf="product">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 w3-centered">
-                            <div class="container">
+                            <div>
                                 <h1>{{product.name}} <br> </h1>
-                            </div>
-                            <div class="container w3-padding">
                                 <a>{{product.description}}</a>
                             </div>
                             <a class="w3-btn btn-color1 w3-padding"><!--</a>(click)="addToCart(product)"-->Comprar</a>
